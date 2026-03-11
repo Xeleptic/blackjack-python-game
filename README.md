@@ -7,4 +7,4 @@ To run the game through PyCharm, proceed as follows:
 3. Run: blackjack_regular.py (for the base game)
    Or: blackjack_extended.py (for the extended version)
 4. Follow the instructions in the terminal to play
-I have not used platforms other than PyCharm; however, the process should be similar. Enjoy!
+   I have not used platforms other than PyCharm; however, the process should be similar. Enjoy!
