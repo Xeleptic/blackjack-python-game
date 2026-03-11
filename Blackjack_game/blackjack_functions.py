@@ -235,15 +235,15 @@ def final_winner_gambling (winner_1, winner_2, winner_3, x, amount):
         mode = "a difficulty that makes the game literally almost impossible to lose"
     if player_wins > dealer_wins:
         print(f"You won on {mode}!"
-              f"\nYou won {int(amount + amount*x)} robux! "
+              f"\nYou won {int(amount + amount*x)} dabloons! "
               f"\nGood job kiddo, I see your potential. Keep at it bucko.")
     elif player_wins < dealer_wins:
         print(f"You lost on {mode}."
-              f"\nYou lost {amount} robux. "
+              f"\nYou lost {amount} dabloons. "
               f"\nCome on kiddo, one more game. You're due for a win at this point.")
     else:
         print(f"This series, played on {mode}, was a draw!"
-              f"\nYour robux have been returned to your inventory."
+              f"\nYour dabloons have been returned to your bank account."
               f"\nCome on kiddo, one more game. You're due for a win at this point.")
     return
 
@@ -260,3 +260,4 @@ def blackjack_game (round_number, x):
     display_winner(winner)
 
     return winner
+
