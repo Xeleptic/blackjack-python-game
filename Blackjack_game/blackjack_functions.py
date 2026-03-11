@@ -180,7 +180,7 @@ def final_winner (winner_1, winner_2, winner_3):
 """Part 6: Additional Stuff I Added For No Good Reason"""
 def set_difficulty ():
     difficulty = input(f"Please select a difficulty [easy, medium, hard]:"
-                       f"\n*Note: Higher difficulties mean more robux if you win!"
+                       f"\n*Note: Higher difficulties mean more dabloons if you win!"
                        f"\nEnter choice: ")
     # x values were decided by taking the ideal x value, 0.81 (17/21 rounded up), then removing 20 every time the difficulty level decreases
     x = 0.61
@@ -199,9 +199,9 @@ def set_difficulty ():
 def how_much_gamble ():
     amount = "Invalid"
     while amount == "Invalid":
-        amount = input(f"\nPlease enter how many robux you want to gamble:"
-                   f"\n*Note: Mimimum amount: 10 robux"
-                   f"\n       Maximum amount: 10 000 robux"
+        amount = input(f"\nPlease enter how many dabloons you want to gamble:"
+                   f"\n*Note: Mimimum amount: 10 dabloons"
+                   f"\n       Maximum amount: 10 000 dabloons"
                    f"\nEnter amount only (no units): ")
         try:
             amount_int = int(amount)
@@ -258,4 +258,5 @@ def blackjack_game (round_number, x):
     dealer_hand, deck = dealer_turn(deck, dealer_hand, x)
     winner = decide_winner(player_hand, dealer_hand)
     display_winner(winner)
+
     return winner
